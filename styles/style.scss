@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background: url(../images/bg-mobile.png) no-repeat;
+    background-size: cover;
+    
+}
+header, nav, main, section, article, aside, footer {
+    display: block;
+}
+.wrapper {
+    opacity: 0.5;
+    color: white;
+    margin: 80px 30px;
+
+    header {
+        padding: 30px;
+        border-radius: 10px 80px 10px 10px;
+        background: hsl(228, 45%, 44%);
+
+        .logo {
+            width: 70%;
+            height: 100%;
+        }
+
+        .icons {
+            width: 70%; 
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            .icon {
+                width: 60%;
+                justify-self: start;
+                align-self: center;
+                background: black;
+                box-sizing: border-box;
+                border-radius: 7px;
+                img {   
+                    width: 100%;
+                }
+            }
+
+            .one {
+                padding: 7px;
+                height: 90%;
+                display: flex;
+                align-items: center;
+            }
+            .two {
+                padding: 7px;
+                height: 90%;
+                display: flex;
+                align-items: center;
+            }
+            .three {
+                padding: 5px;
+                height: 90%;
+                display: flex;
+                align-items: center;
+            }
+
+        }
+
+    }
+
+    .section {
+        position: relative;
+        .sub-section {
+            margin-top: 20px;
+            padding: 30px 20px 50px;
+            background: hsl(228, 45%, 44%);
+            border-radius: 10px;
+            box-sizing: border-box;
+
+            p {
+                text-align: center;
+                font-size: 0.9em;
+            }
+    
+            .progress {
+                margin: 10px 0;
+                padding: 2px;
+                border-radius: 30px;
+                background: hsl(228, 68%, 22%);
+    
+                .progress-bar {
+                    position: relative;
+                    width: 81.5%;
+                    height: 13px;
+                    background: #ee303c;
+                    border-radius: 30px;
+                    background-image: linear-gradient(to right, #F9BCCA, #EF476F);
+                
+                    animation: progressAnimation 6s;
+    
+                    .btn {
+                        position: absolute;
+                        top: 1px;
+                        right: 3px;
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                        background: white;
+                    }
+                }
+            }
+    
+            .bytes {
+                font-size: 0.9em;
+                font-weight: bold;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+    
+                .max-byte {
+                    justify-self: end;
+                }
+            }
+        }
+    }
+
+    .update {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+        width: 150px;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        background: white;
+        position: absolute;
+        bottom: -20%;
+        left: 25%;
+        
+        .left {
+            font-size: 2em;
+            justify-self: center;
+            color: black;
+        }
+        .right {
+            color: rgb(156, 143, 143);
+            font-size: 1em;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .angle {
+            display: none;
+        }
+    }
+}
+@keyframes progressAnimation {
+    0% {width: 5%; background-color: #F9BCCA;}
+    100% {width: 81.5%; background-color: #EF476F;}
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+
+    span {
+        display: block;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: yellowgreen;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        background: url(../images/bg-desktop.png) bottom left no-repeat fixed, hsl(228, 76%, 15%);
+        background-size: 100% 55%, cover;
+       
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-gap: 1em;
+        width: 70%;
+        margin: 210px auto 0;
+        
+        header {
+            width: 300px;
+            height: 50%;
+            padding: 20px;
+            justify-self: end;
+
+            .logo {
+                height: auto;
+            }
+
+            .icons {
+                margin-top: 20px;
+            }
+
+        }
+
+        .section {
+            width: 80%;
+            
+            .sub-section {
+                padding-bottom: 30px;
+                align-self: end;
+
+                p {
+                    text-align: left;
+                }
+            }
+           
+            .update {
+                position: relative;
+                bottom: 80%;
+                left: 26%;
+                border-radius: 10px 10px 0 10px;
+               
+                .angle {
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-top: 15px solid white;
+                    border-left: 20px solid transparent;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 5px;
+        font-size: 1em;
+
+        span {
+            display: inline-block;
+        }
+
+        #fspan {
+            padding-right: 10px;
+            border-right: 1px solid whitesmoke;
+        }
+
+        #sspan {
+            padding-left: 10px;
+            border-left: 1px solid whitesmoke;
+        }
+
+    }
+
+}

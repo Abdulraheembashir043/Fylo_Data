@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../images/bg-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+header, nav, main, section, article, aside, footer {
+  display: block;
+}
+
+.wrapper {
+  opacity: 0.5;
+  color: white;
+  margin: 80px 30px;
+}
+
+.wrapper header {
+  padding: 30px;
+  border-radius: 10px 80px 10px 10px;
+  background: #3e52a3;
+}
+
+.wrapper header .logo {
+  width: 70%;
+  height: 100%;
+}
+
+.wrapper header .icons {
+  width: 70%;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapper header .icons .icon {
+  width: 60%;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.wrapper header .icons .icon img {
+  width: 100%;
+}
+
+.wrapper header .icons .one {
+  padding: 7px;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper header .icons .two {
+  padding: 7px;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper header .icons .three {
+  padding: 5px;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .section {
+  position: relative;
+}
+
+.wrapper .section .sub-section {
+  margin-top: 20px;
+  padding: 30px 20px 50px;
+  background: #3e52a3;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .section .sub-section p {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.wrapper .section .sub-section .progress {
+  margin: 10px 0;
+  padding: 2px;
+  border-radius: 30px;
+  background: #12215e;
+}
+
+.wrapper .section .sub-section .progress .progress-bar {
+  position: relative;
+  width: 81.5%;
+  height: 13px;
+  background: #ee303c;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F9BCCA), to(#EF476F));
+  background-image: linear-gradient(to right, #F9BCCA, #EF476F);
+  -webkit-animation: progressAnimation 6s;
+          animation: progressAnimation 6s;
+}
+
+.wrapper .section .sub-section .progress .progress-bar .btn {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+}
+
+.wrapper .section .sub-section .bytes {
+  font-size: 0.9em;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.wrapper .section .sub-section .bytes .max-byte {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.wrapper .update {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  width: 150px;
+  margin: 0 auto;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background: white;
+  position: absolute;
+  bottom: -20%;
+  left: 25%;
+}
+
+.wrapper .update .left {
+  font-size: 2em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: black;
+}
+
+.wrapper .update .right {
+  color: #9c8f8f;
+  font-size: 1em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.wrapper .update .angle {
+  display: none;
+}
+
+@-webkit-keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #F9BCCA;
+  }
+  100% {
+    width: 81.5%;
+    background-color: #EF476F;
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #F9BCCA;
+  }
+  100% {
+    width: 81.5%;
+    background-color: #EF476F;
+  }
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+}
+
+footer span {
+  display: block;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: yellowgreen;
+          text-decoration-color: yellowgreen;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(../images/bg-desktop.png) bottom left no-repeat fixed, #091543;
+    background-size: 100% 55%, cover;
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+    grid-gap: 1em;
+    width: 70%;
+    margin: 210px auto 0;
+  }
+  .wrapper header {
+    width: 300px;
+    height: 50%;
+    padding: 20px;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .wrapper header .logo {
+    height: auto;
+  }
+  .wrapper header .icons {
+    margin-top: 20px;
+  }
+  .wrapper .section {
+    width: 80%;
+  }
+  .wrapper .section .sub-section {
+    padding-bottom: 30px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .wrapper .section .sub-section p {
+    text-align: left;
+  }
+  .wrapper .section .update {
+    position: relative;
+    bottom: 80%;
+    left: 26%;
+    border-radius: 10px 10px 0 10px;
+  }
+  .wrapper .section .update .angle {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid white;
+    border-left: 20px solid transparent;
+  }
+  .footer {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .footer span {
+    display: inline-block;
+  }
+  .footer #fspan {
+    padding-right: 10px;
+    border-right: 1px solid whitesmoke;
+  }
+  .footer #sspan {
+    padding-left: 10px;
+    border-left: 1px solid whitesmoke;
+  }
+}
+/*# sourceMappingURL=style.css.map */
