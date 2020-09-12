@@ -4,7 +4,6 @@
     padding: 0;
 }
 body {
-    height: 100%;
     box-sizing: border-box;
     background: url(../images/bg-mobile.png) no-repeat;
     background-size: cover;
@@ -173,7 +172,8 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    padding: 10px 0;
+    padding: 10px 0 0;
+    margin-bottom: 15px;
     text-align: center;
     color: white;
     font-size: 0.9em;
