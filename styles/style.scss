@@ -173,7 +173,7 @@ footer {
     position: absolute;
     bottom: 0;
     padding: 10px 0 0;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-align: center;
     color: white;
     font-size: 0.9em;
@@ -258,7 +258,8 @@ footer {
     .footer {
         padding: 5px;
         font-size: 1em;
-
+        margin-bottom: 0;
+        
         span {
             display: inline-block;
         }
