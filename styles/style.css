@@ -8,6 +8,7 @@ body {
           box-sizing: border-box;
   background: url(../images/bg-mobile.png) no-repeat;
   background-size: cover;
+  font-family: 'Raleway', sans-serif;
 }
 
 header, nav, main, section, article, aside, footer {
@@ -23,7 +24,7 @@ header, nav, main, section, article, aside, footer {
 .wrapper header {
   padding: 30px;
   border-radius: 10px 80px 10px 10px;
-  background: #3e52a3;
+  background: #384a94;
 }
 
 .wrapper header .logo {
@@ -174,16 +175,20 @@ header, nav, main, section, article, aside, footer {
   -ms-grid-column-align: center;
       justify-self: center;
   color: black;
+  font-weight: 700;
 }
 
 .wrapper .update .right {
-  color: #9c8f8f;
-  font-size: 1em;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  color: #848794;
+  font-size: 12px;
+  -ms-grid-column-align: start;
+      justify-self: start;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .wrapper .update .angle {
@@ -193,22 +198,22 @@ header, nav, main, section, article, aside, footer {
 @-webkit-keyframes progressAnimation {
   0% {
     width: 5%;
-    background-color: #F9BCCA;
+    background-color: #ffa399;
   }
   100% {
     width: 81.5%;
-    background-color: #EF476F;
+    background-color: #ff4d97;
   }
 }
 
 @keyframes progressAnimation {
   0% {
     width: 5%;
-    background-color: #F9BCCA;
+    background-color: #ffa399;
   }
   100% {
     width: 81.5%;
-    background-color: #EF476F;
+    background-color: #ff4d97;
   }
 }
 
@@ -239,7 +244,7 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    background: url(../images/bg-desktop.png) bottom left no-repeat fixed, #091543;
+    background: url(../images/bg-desktop.png) bottom left no-repeat fixed, #0c122c;
     background-size: 100% 55%, cover;
   }
   .wrapper {
