@@ -67,9 +67,7 @@ header, nav, main, section, article, aside, footer {
                 display: flex;
                 align-items: center;
             }
-
         }
-
     }
 
     .section {
@@ -176,11 +174,7 @@ footer {
     margin-bottom: 25px;
     text-align: center;
     color: white;
-    font-size: 0.9em;
-
-    span {
-        display: block;
-    }
+    font-size: 0.8em;
 
     a {
         color: white;
@@ -260,10 +254,6 @@ footer {
         font-size: 1em;
         margin-bottom: 0;
         
-        span {
-            display: inline-block;
-        }
-
         #fspan {
             padding-right: 10px;
             border-right: 1px solid whitesmoke;

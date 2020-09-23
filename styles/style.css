@@ -225,11 +225,7 @@ footer {
   margin-bottom: 25px;
   text-align: center;
   color: white;
-  font-size: 0.9em;
-}
-
-footer span {
-  display: block;
+  font-size: 0.8em;
 }
 
 footer a {
@@ -302,9 +298,6 @@ footer a:hover {
     padding: 5px;
     font-size: 1em;
     margin-bottom: 0;
-  }
-  .footer span {
-    display: inline-block;
   }
   .footer #fspan {
     padding-right: 10px;
