@@ -176,12 +176,22 @@ footer {
     color: white;
     font-size: 0.8em;
 
+    #fspan {
+        padding-right: 10px;
+        border-right: 1px solid whitesmoke;
+    }
+
+    #sspan {
+        padding-left: 10px;
+        border-left: 1px solid whitesmoke;
+    }
+
     a {
         color: white;
-        text-decoration: none;
+        text-decoration: underline;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
             text-decoration-color: yellowgreen;
         }
     }
@@ -249,20 +259,10 @@ footer {
         }
     }
 
-    .footer {
+    footer {
         padding: 5px;
         font-size: 1em;
         margin-bottom: 0;
-        
-        #fspan {
-            padding-right: 10px;
-            border-right: 1px solid whitesmoke;
-        }
-
-        #sspan {
-            padding-left: 10px;
-            border-left: 1px solid whitesmoke;
-        }
 
     }
 

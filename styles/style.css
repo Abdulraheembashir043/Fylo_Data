@@ -228,13 +228,23 @@ footer {
   font-size: 0.8em;
 }
 
+footer #fspan {
+  padding-right: 10px;
+  border-right: 1px solid whitesmoke;
+}
+
+footer #sspan {
+  padding-left: 10px;
+  border-left: 1px solid whitesmoke;
+}
+
 footer a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-text-decoration-color: yellowgreen;
           text-decoration-color: yellowgreen;
 }
@@ -294,18 +304,10 @@ footer a:hover {
     border-top: 15px solid white;
     border-left: 20px solid transparent;
   }
-  .footer {
+  footer {
     padding: 5px;
     font-size: 1em;
     margin-bottom: 0;
-  }
-  .footer #fspan {
-    padding-right: 10px;
-    border-right: 1px solid whitesmoke;
-  }
-  .footer #sspan {
-    padding-left: 10px;
-    border-left: 1px solid whitesmoke;
   }
 }
 /*# sourceMappingURL=style.css.map */
